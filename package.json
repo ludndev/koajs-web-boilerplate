@@ -1,0 +1,31 @@
+{
+  "name": "koajs-web-boilerplate",
+  "version": "1.0.0",
+  "description": "A KoaJs MVC web boilerplate.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha tests/**/*.js --exit --timeout 5000",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "prod": "pm2 start --name 'koajs-web-boilerplate' app.js"
+  },
+  "author": "ludndev",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "@koa/ejs": "^5.1.0",
+    "dotenv": "^16.3.1",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.0",
+    "koa-ejs": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  }
+}
